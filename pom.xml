@@ -45,6 +45,19 @@
       <artifactId>taglibs-standard-jstlel</artifactId>
       <version>1.2.5</version>
     </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+
     <!--  JSon -->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
@@ -78,6 +91,12 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
       <version>5.2.3.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-web</artifactId>
+      <version>5.3.4.RELEASE</version>
     </dependency>
     <!-- used for EhCacheCacheManager -->
     <dependency>
