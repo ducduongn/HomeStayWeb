@@ -54,7 +54,7 @@
 
     <div class="starter-template">
         <h1>Spring MVC 5 + Bootstrap starter template</h1>
-        <p class="lead">${message}</p>
+        <p class="lead">Welcome to HomeStay Web</p>
     </div>
 
 

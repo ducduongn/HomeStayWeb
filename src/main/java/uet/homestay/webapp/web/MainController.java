@@ -1,21 +1,17 @@
 package uet.homestay.webapp.web;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MainController {
 
-    @RequestMapping("/greet")
-    public ModelAndView showview()
-    {
-
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("result.jsp");
-        mv.addObject("result",
-                "GeeksForGeeks Welcomes "
-                        + "you to Spring!");
-        return mv;
+    @RequestMapping(method = RequestMethod.GET)
+    public String index(ModelMap model){
+        model.addAttribute("message", "Spring MVC Java Configuration Example");
+        return "index";
     }
 }
