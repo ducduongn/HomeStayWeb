@@ -10,8 +10,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
-@ComponentScan({ "uet.homestay.webapp.web" })
-
+@ComponentScan({ "uet.homestay.webapp.web", "uet.homestay.webapp.repository" })
 public class MVCConfig implements WebMvcConfigurer {
 
     @Bean
